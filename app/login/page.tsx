@@ -1,39 +1,10 @@
 "use client"
 
-
-import Image from "next/image";
 import { useState } from "react";
 export default function Home() {
   const [inputValue, setInputValue] = useState("");
-  const handleSubmit = () => {
-    console.log("User's Day: ", inputValue);
-  }
-  type DayResult = {
-  mood: string;
-  caption: string;
-  playlist: string;
-};
-  const [results, setResults] = useState<DayResult | null>(null);
-  function DayList() {
-  const [dayText, setDayText] = useState("");
-  const [loading, setLoading] = useState(false);
-  const fakeGenerateDay = async (): Promise<DayResult> => {
-  return {
-    mood: "Happy",
-    caption: "Great day!",
-    playlist: "Harry Styles Radio",
-  };
-};
-const handleGenerate = async () => {
-  setLoading(true);
-
-  const data = await fakeGenerateDay();
-
-  setResults(data);
-
-  setLoading(false);
-};
-}
+  <a href = "https://www.freepik.com/free-vector/gradient-music-background_13690547.htm#query=music%20background&position=0&from_view=search&track=sph">Image by rawpixel.com</a>
+  
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <h1 className="text-4xl font-bold mb-2 text-zinc-900 dark:text-white">
@@ -72,3 +43,4 @@ const handleGenerate = async () => {
     </div>
   );
 }
+
