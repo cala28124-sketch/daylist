@@ -1,6 +1,5 @@
 import { GoogleGenAI } from '@google/genai';
 
-// Make sure your key is entirely inside the single or double quotes
 const ai = new GoogleGenAI({ apiKey: "" });
 async function printAISongList(userPrompt) {
   try {
