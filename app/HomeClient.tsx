@@ -43,6 +43,9 @@ export default function HomeClient() {
       </a>
 
       <div className="flex flex-col items-center gap-4">
+        <h1 className="text-5xl font-bold text-white tracking-tight">
+          Daylist
+        </h1>
         <input
           type="text"
           value={moodText}
@@ -70,9 +73,7 @@ export default function HomeClient() {
         target="_blank"
         rel="noopener noreferrer"
         className={`flex h-40 w-40 shrink-0 items-center justify-center rounded-full bg-purple-500 text-sm font-semibold text-white shadow-lg transition hover:scale-105 hover:bg-purple-600 ${
-          playlistURL
-            ? "opacity-100"
-            : "pointer-events-none opacity-0"
+          playlistURL ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
         Open Playlist
